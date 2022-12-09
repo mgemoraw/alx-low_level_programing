@@ -4,14 +4,17 @@
 
 /**
  * main - Entry point
- * Description: prints "\"Programming is like building a multilingual puzzle"
+ * Description: prints prints if a number is positive or negative
  * Return: 0
  */
 
 int main(void)
 {
+	
+	int number ;
+
 	srand(time(0));
-	int number = rand() - RAND_MAX / 2;
+	number = rand() - RAND_MAX / 2;
 
 	if (number < 0)
 	{

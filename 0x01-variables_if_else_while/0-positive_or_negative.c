@@ -11,19 +11,19 @@
 int main(void)
 {
 	srand(time(0));
-	int number = rand();
+	int n = rand();
 
-	if (number < 0)
+	if (n < 0)
 	{
-		printf("is negative\n");
+		printf("%d is negative\n", n);
 	}
-	else if (number == 0)
+	else if (n == 0)
 	{
-		printf("is zero\n");
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf("is positive\n");
+		printf("%d is positive\n", n);
 	}
 	return (0);
 }

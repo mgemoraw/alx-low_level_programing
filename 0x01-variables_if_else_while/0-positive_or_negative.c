@@ -1,24 +1,29 @@
-#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
 
-/*
-* 
-* Description: 
-* Return: always 
-*/
+/**
+ * main - Entry point
+ * Description: prints "\"Programming is like building a multilingual puzzle"
+ * Return: 0
+ */
+
 int main(void)
 {
-    srand(time(0));
-   long int x = rand();
-    if (x < 0)
-    {
-        printf("%d is negative\n", x);
-    }else if(x == 0)
-    {
-        printf("%d is zero\n", x);
-    }else{
-        printf("%d is positive\n", x);
-    }
-    return (0);
+	srand(time(0));
+	int number = rand();
+
+	if (number < 0)
+	{
+		printf("%d is negative", number);
+	}
+	else if (number == 0)
+	{
+		printf("%d is zero", number);
+	}
+	else
+	{
+		printf("%d is positive", number);
+	}
+	return (0);
 }

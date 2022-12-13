@@ -8,11 +8,22 @@
 
 int print_sign(int n)
 {
-	if (n >= 65 && n <= 122)
-		return (1);
-	else if (n == '0')
-		return (0);
+	int ans = -1;
+	if (n > 0)
+	{
+		_putchar('+');
+		ans = 1;
+	}
+	else if (n == 0)
+	{
+		_putchar('0');
+		ans = 0;
+	}
 	else if (n < 0)
-		return (-1);
+	{
+		_putchar('-');
+		ans = -1;
+	}
+	return (ans);
 
 }

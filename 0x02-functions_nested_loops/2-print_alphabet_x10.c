@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * print_alphabet - print alphabet lowercase
+ * print_alphabet_x10 - print alphabet 
  * Description: print alphabets 10 times
  * Return: Always 0.
  */
-
 void print_alphabet_x10(void)
 {
 	char ch;

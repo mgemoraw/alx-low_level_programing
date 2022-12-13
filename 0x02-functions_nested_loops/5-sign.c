@@ -6,7 +6,7 @@
  * Return: Always 0.
  */
 
-int _isalpha(int n)
+int print_sign(int n)
 {
 	if (n >= 65 && n <= 122)
 		return (1);

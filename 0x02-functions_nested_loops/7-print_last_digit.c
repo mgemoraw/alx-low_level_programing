@@ -6,16 +6,17 @@
  * Return: Always 0.
  */
 
-int print_last_digit(int n)
+int print_last_digit(int number)
 {
 	int last;
 
-	if (n < 0)
+	if (number < 0)
 	{
-		n = -1 * n;
+		number = -1 * number;
 	}
 
-	last = n % 10;
-	_putchar(last + '0');
+	last = (number % 10);
+	_putchar('0' + last);
+
 	return (last);
 }

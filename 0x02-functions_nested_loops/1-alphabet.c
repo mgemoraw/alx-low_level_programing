@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
-* _putchar - writes the character c to stdout
-* print_alphabet - prints alphabets
-*
-* Return: on success 1.
-* On error, -1 is returned, and errno is set appropriately.
-*/
+ * print_alphabet - print alphabet lowercase
+ *
+ * Return: Always 0.
+ */
 
 void print_alphabet(void)
 {

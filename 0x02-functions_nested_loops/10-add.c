@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * add - prints add two numbers
+ * add - returns add two numbers
  * @a: input parameter a
  * @b: input parameter b
- * Return : Always 0.
+ * Return : add a + b.
  */
 int add(int a, int b)
 {

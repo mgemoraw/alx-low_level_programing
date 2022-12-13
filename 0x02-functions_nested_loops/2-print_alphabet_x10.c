@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet - print alphabet lowercase
- *
+ * Description: print alphabets 10 times
  * Return: Always 0.
  */
 

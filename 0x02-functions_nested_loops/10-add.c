@@ -6,7 +6,7 @@
  * @b: input parameter
  * Return : Always 0.
  */
-void add(int a, int b)
+int add(int a, int b)
 {
 	return (a + b);
 }

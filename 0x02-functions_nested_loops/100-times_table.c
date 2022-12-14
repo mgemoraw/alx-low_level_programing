@@ -11,11 +11,7 @@ void print_times_table(int n)
 	int b;
 	int pro;
 
-	if (n < 0 || n > 15)
-	{
-		_putchar(' ');
-	}
-	else
+	if (n > 0 && n < 15)
 	{
 		for (a = 0; a <= n; a++)
 		{
@@ -32,15 +28,20 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar('0' + pro);
 				}
-				else
+				else if (pro <= 99)
 				{
 					_putchar('0' + pro / 10);
 					_putchar('0' + pro % 10);
+				}
+				else
+				{
+
+					_putchar('0' +(pro / 10) / 10);
+					_putchar('0' + (pro / 10) % 10);
+					_putchar('0' + pro % 10);	
 				}
 			}
 		_putchar('\n');
 	}
 	}
-
-	
 }

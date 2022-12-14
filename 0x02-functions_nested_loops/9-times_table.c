@@ -17,7 +17,7 @@ void times_table(void)
 		{
 			_putchar(',');
 			_putchar(' ');
-			
+
 			pro = a * b;
 
 			if (pro <= 9)

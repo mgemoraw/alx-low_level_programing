@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include "main.h"
 /**
  * print_times_table - prints time table
  * @n: input parameter
@@ -8,7 +8,6 @@
 void print_natural(void)
 {
 	int a;
-	int b;
 	int sum = 0;
 	for (a = 0; a < 1024; a++)
 	{

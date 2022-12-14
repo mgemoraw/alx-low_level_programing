@@ -13,4 +13,6 @@ int main(void)
 		if ((a % 5 == 0) || (a % 3 == 0))
 			sum += a;
 	printf("%d", sum);
+
+	return (0);
 }

@@ -1,11 +1,11 @@
 #include <stdio.h>
-
+#include <main.h>
 /**
  * print_times_table - prints time table
  * @n: input parameter
  * Return: Always 0.
  */
-int main(void)
+void print_natural(void)
 {
 	int a;
 	int b;

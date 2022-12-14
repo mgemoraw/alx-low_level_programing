@@ -11,10 +11,10 @@ int main(void)
 	int i;
 	unsigned long int a = 0, b = 1, c;
 	unsigned long int sum = 0;
+
 	for (i = 0; i < 50; i++)
 	{
 		c = a + b;
-	
 		if (c % 2 == 0 &&  c < 4000000)
 		{
 			sum += c;

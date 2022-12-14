@@ -14,7 +14,7 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		c = a + b;
-		if (c % 2 == 0)
+		if (c % 2 == 0 &&  c < 4000000)
 		{
 			sum += c;
 		}

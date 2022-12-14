@@ -2,33 +2,29 @@
 
 /**
  * main- prints fibonacci series
- * @n: input parameter for function fibonacci
- * fib: function returns fibonacci number
+ * fibonacci numbers
  * Return: Always 0.
  */
 
-int fib(int n);
-
 int main(void)
 {
-	long int f;
-	int a;
+	int i;
+	unsigned long int a = 0, b = 1, c;
 
-	for (a = 0; a < 50; a++)
+	for (i = 0; i < 50; i++)
 	{
-		f = fib(a);
-		printf("%d, ", f);
-	}
-	printf("%d", fib(50));
+		c = a + b;
+		printf("%lu", c);
+		a = b;
+		b = c;
 
+		if (i == 49)
+			printf("\n");
+		else
+			printf(", ");
+	}
 	return (0);
 }
 
-int fib(int n)
-{
-	if (n <= 1)
-		return n;
-	return (fib(n - 1)) + fib(n - 2);
-}
 
 

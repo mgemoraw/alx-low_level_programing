@@ -2,7 +2,7 @@
 
 /**
  * main- prints sum of even fibonacci numbers
- * fibonacci sum 
+ * fibonacci sum
  * Return: Always 0.
  */
 
@@ -14,6 +14,7 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		c = a + b;
+	
 		if (c % 2 == 0 &&  c < 4000000)
 		{
 			sum += c;

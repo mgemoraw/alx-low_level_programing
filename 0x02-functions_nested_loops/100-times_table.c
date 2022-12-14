@@ -26,10 +26,12 @@ void print_times_table(int n)
 				if (pro <= 9)
 				{
 					_putchar(' ');
+					_putchar(' ');
 					_putchar('0' + pro);
 				}
 				else if (pro <= 99)
 				{
+					_putchar(' ');
 					_putchar('0' + pro / 10);
 					_putchar('0' + pro % 10);
 				}

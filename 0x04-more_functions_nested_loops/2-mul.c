@@ -4,8 +4,9 @@
 
 /**
  * mul - function multiplies two digit numbers
- * @a, @b: input character
- * Return: Always 0
+ * @a: input parameter 
+ * @b: input character
+ * Return: returns multiple of a and b
  */
 
 int mul(int a, int b)

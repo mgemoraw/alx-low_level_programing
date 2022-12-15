@@ -4,7 +4,7 @@
 
 /**
  * _isupper - Entry point
- * @c: input character
+ * @c: tested character
  * Return: returns 1 if it is uppercase, 0 if not
  */
 

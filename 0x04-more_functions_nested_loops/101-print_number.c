@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 *print_number - prints integer
 *@n: input number
@@ -10,12 +11,12 @@ unsigned int num;
 num = n;
 if (n < 0)
 {
-    _putchar('-');
-    num = -num;
+_putchar('-');
+num = -num;
 }
 if (num > 9)
 {
-    print_number(n / 10);   /* recursive */
+print_number(n / 10);   /* recursive */
 }
 _putchar(num  % 10 + '0');
 }

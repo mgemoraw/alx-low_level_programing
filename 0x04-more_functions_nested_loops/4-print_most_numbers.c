@@ -14,7 +14,9 @@ for (num = 48; num < 58; num++)
 if (num == 50 || num == 52)
 {
 continue;
-}else
+}
+
+else
 {
 _putchar(num);
 }

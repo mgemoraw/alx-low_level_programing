@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-*print_diagonal - prints diagonal line
+*print_square - prints square line
 *@size: parameter size
 *Return: returns nothing
 */
 
-void print_diagonal(int size)
+void print_square(int size)
 {
     int num1, num2;
     if (size > 0)

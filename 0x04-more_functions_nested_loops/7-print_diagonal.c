@@ -16,11 +16,11 @@ for (num1 = 0; num1 < n; num1++)
 for (num2 = 0; num2 < num1; num1++)
 {
 _putchar(' ');
+}
 _putchar('\\');
 if (num1 == (n - 1))
 continue;
 _putchar('\n');
-}
 }
 }
 _putchar(10);

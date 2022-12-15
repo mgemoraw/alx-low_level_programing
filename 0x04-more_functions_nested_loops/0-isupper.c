@@ -5,17 +5,13 @@
 /**
  * _isupper - Entry point
  * @c: input character
- * Return: Always 0
+ * Return: returns 1 if it is uppercase, 0 if not
  */
 
 int _isupper(int c)
 {
 	if (c >= 65 && c < 97)
-	{
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }

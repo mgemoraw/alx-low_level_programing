@@ -21,6 +21,8 @@ for (k = 0; k <= i; k++)
 {
 _putchar('#');
 }
+if (i == size)
+continue;
 _putchar('\n');
 }
 }

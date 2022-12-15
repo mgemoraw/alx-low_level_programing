@@ -23,7 +23,7 @@ void print_number(int n)
         while (n > 9)
         {
             _putchar(n / c + '0');
-            n  = n / c;
+            n  = n % c;
             c = c / 10;
         }
         _putchar(n % 10 + '0');

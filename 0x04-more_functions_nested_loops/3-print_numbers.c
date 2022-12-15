@@ -3,10 +3,8 @@
 /* more headers goes there */
 
 /**
- * mul - function multiplies two digit numbers
- * @a: input parameter
- * @b: input character
- * Return: returns multiple of a and b
+ * print_numbers - prints numbers 0 to 9
+ * Return: no returns
  */
 
 void print_numbers(void)

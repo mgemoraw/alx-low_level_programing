@@ -13,9 +13,8 @@ if (n > 0)
 for (row = 0; row < n; row++)
 {
 for (col = 0; col < row; col++)
-{
 _putchar(' ');
-}
+
 _putchar('\\');
 _putchar('\n');
 }

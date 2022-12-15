@@ -17,8 +17,11 @@ for (num2 = 0; num2 < num1; num1++)
 {
 _putchar(' ');
 _putchar('\\');
+if (num2 == (n - 1))
+continue;
+_putchar('\n');
+}
 }
 }
 _putchar(10);
-}
 }

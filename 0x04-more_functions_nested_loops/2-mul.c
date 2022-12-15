@@ -4,7 +4,7 @@
 
 /**
  * mul - function multiplies two digit numbers
- * @a: input parameter 
+ * @a: input parameter
  * @b: input character
  * Return: returns multiple of a and b
  */

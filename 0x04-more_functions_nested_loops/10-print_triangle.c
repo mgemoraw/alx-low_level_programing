@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*print_square - prints squares
+*print_triangle - prints squares
 *@size: size of a triangle
 *Return:returns nothing
 */
@@ -18,7 +18,9 @@ for (k = 0; k <= i; k++)
 {
 _putchar('#');
 }
+
 _putchar('\n');
 
 }
+_putchar('\n');
 }

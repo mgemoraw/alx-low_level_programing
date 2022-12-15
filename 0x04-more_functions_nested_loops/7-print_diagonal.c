@@ -16,6 +16,8 @@ for (col = 0; col < row; col++)
 _putchar(' ');
 
 _putchar('\\');
+if (row = (n -1))
+continue;
 _putchar('\n');
 }
 }

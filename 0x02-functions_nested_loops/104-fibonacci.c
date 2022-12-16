@@ -4,6 +4,8 @@
  * main- prints sum of even fibonacci numbers
  * fibonacci sum
  * Return: Always 0.
+ *
+ * Owner By mgemoraw
  */
 
 int main(void)
@@ -15,7 +17,7 @@ int main(void)
 	{
 		c = a + b;
 		printf("%lu", c);
-		if(i != 97)
+		if (i != 97)
 			printf(", ");
 		else
 			printf("\n");

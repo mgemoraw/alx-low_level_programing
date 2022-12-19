@@ -10,32 +10,28 @@
 void rev_string(char *s)
 {
 
-int len = 0, i;
-for (i = 0; ; i++)
+int len = 0, i, j;
+char temp;
+
+while (s[len] != '\0')
 {
-if (s[i] != '\0')
-{
-len += 1;
-}
-else
-{
-break;
-}
+len++;
 }
 
-len = len - 1;
+j = len - 1;
 
 /*  reversing the order of string  */
-
-for (i = 0; i < len; i++)
+for (i = 0; j >= 0 && i < j; i++)
 {
-char ch;
-ch = s[i];
-s[i] = s[len - i];
-s[len - i] = ch;
+temp = s[i];
+s[i] = s[j];
+s[j] = temp;
+if (j >= 0)
+j--;
+else
+break;
 }
 
-/* _putchar('\n'); */
-
+/* s[i]  = '\0'; */
 
 }

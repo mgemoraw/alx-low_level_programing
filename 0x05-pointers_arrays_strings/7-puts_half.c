@@ -25,7 +25,7 @@ n = (len - 1) / 2;
 }
 
 /* main looop */
-for (i = n + 1; i <= len; i++)
+for (i = n; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
 }

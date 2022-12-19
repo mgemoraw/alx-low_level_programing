@@ -22,6 +22,7 @@ break;
 }
 }
 
+len = len - 1;
 /*  reversing the order of string */
 while (len >= 0)
 {

@@ -14,6 +14,7 @@ while (str[len] != '\0')
 len++;
 }
 
+/* checking length */
 if (len % 2 == 0)
 {
 n = (len / 2);
@@ -22,7 +23,9 @@ else
 {
 n = (len - 1) / 2;
 }
-for (i = n+1; i < len; i++)
+
+/* main looop */
+for (i = n + 1; i <= len; i++)
 {
 _putchar(str[i]);
 }

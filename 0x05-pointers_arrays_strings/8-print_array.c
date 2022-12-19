@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.>
+
 /**
 * print_array - prints array lements
 * @a: input integer

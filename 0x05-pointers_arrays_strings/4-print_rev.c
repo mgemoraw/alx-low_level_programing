@@ -9,7 +9,9 @@
 void print_rev(char *s)
 {
 
+char ss[] = "Hello\0"; 
 int len = 0, c;
+
 for (c = 0; ; c++)
 {
 if (s[c] != '\0')

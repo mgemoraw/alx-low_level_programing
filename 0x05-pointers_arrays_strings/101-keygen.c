@@ -13,19 +13,7 @@ int main(void)
 {
 
 int num;
-/*
-char ch;
 
-srand(time(0));
-while (num <= 2645)
-{
-ch = rand() % 128;
-num += ch;
-putchar(ch);
-}
-putchar(2772 - num);
-return (0);
-*/
 srand(time(0));
 num = rand();
 printf("%i\n", num);

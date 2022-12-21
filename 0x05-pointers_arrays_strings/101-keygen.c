@@ -1,22 +1,24 @@
 #include "main.h"
-#include <string.h>
+#include <stdio.h>
 /**
-* _strcpy - prints a string
-* @dest: input string
-* @src: input character string
-* Description: this prints prints strings
+* main - generates keygen string
+*
+* Description: this program prints keygen strings
 * Return: returns nothing
 */
 
-void *_strcpy(char *dest, char *src)
+int main(void)
 {
+char ch;
+int num;
 
-int i = -1;
-
-do {
-i++;
-dest[i] = src[i];
-} while (src[i] != '\0');
-
-return (dest);
+srand(time(0));
+while (num <= 2645)
+{
+ch = rand() % 128;
+num += ch;
+putchar(ch);
+}
+putchar(2772 - num);
+return (0);
 }

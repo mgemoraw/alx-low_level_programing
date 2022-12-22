@@ -10,12 +10,12 @@ char *leet(char *str)
 {
 
 int i, j = 0;
-char str1[] = "aAeEoOtTlL";
-char str2[] = "4433007711";
+char *str1 = "aAeEoOtTlL";
+char *str2 = "4433007711";
 
-for (i = 0; *(str + i); i++)
+for (i = 0; str[i] != '\0'; i++)
 {
-while (j  < 9)
+while (j  <= 9)
 {
 if (str1[j] == str[i])
 str[i] = str2[j];

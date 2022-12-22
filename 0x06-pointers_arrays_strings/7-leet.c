@@ -15,7 +15,7 @@ char *str2 = "4433007711";
 
 for (i = 0; str[i] != '\0'; i++)
 {
-while (j  <= 9)
+while (str1[j] != '\0')
 {
 if (str[i] == str1[j])
 {

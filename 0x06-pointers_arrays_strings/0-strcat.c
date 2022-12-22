@@ -23,7 +23,7 @@ return (c);
 * Return: returns nothing
 */
 
-void *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 int d = _strlen(dest);
 /*int s = _strlen(src); */
@@ -35,4 +35,5 @@ i++;
 d++;
 }
 dest[d] = '\0';
+return (dest);
 }

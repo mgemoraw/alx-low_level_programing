@@ -3,6 +3,6 @@
 
 
 int _putchar(char c);
-void *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src);
 
 #endif

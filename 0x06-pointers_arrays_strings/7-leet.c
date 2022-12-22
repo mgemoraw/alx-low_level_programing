@@ -17,8 +17,10 @@ for (i = 0; str[i] != '\0'; i++)
 {
 while (j  <= 9)
 {
-if (str1[j] == str[i])
+if (str[i] == str1[j])
+{
 str[i] = str2[j];
+}
 j++;
 }
 }

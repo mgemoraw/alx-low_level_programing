@@ -22,23 +22,19 @@ return (c);
 
 char *leet(char *str)
 {
-int i = 0;
 int len = _strlen(str);
+int i = 0, j = 0;
+char str1[] = "aAeEoOtTlL";
+char str2[] = "4433007711";
 
 while (i < len)
 {
-if (str[i] == 'a' || str[i] == 'A')
-str[i] = '4';
-else if (str[i] == 'e' || str[i] == 'E')
-str[i] = '3';
-else if (str[i] == 'o' || str[i] == 'O')
-str[i] = '0';
-else if (str[i] == 't' || str[i] == 'T')
-str[i] = '7';
-else if (str[i] == 'l' || str[i] == 'L')
-str[i] = '1';
-else
-str[i] += 0;
+while (j  < 9)
+{
+if (str1[j] == str[i])
+str[i] = str2[j];
+j++;
+}
 i++;
 }
 return (str);

@@ -28,8 +28,8 @@ char *_strncat(char *dest, char *src, int n)
 {
 int d = _strlen(dest);
 /*int s = _strlen(src); */
-int i = n;
-while (src[i] != '\0')
+int i = 0;
+while (i < n && src[i] != '\0')
 {
 dest[d] = src[i];
 i++;

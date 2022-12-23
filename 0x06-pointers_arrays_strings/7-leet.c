@@ -9,19 +9,16 @@
 char *leet(char *str)
 {
 
-int i, j = 0;
-char *str1 = "aAeEoOtTlL";
-char *str2 = "4433007711";
+int i = 0, j = 0;
+char *ltr = "aeotlAEOTL";
+char *ntr = "4307143071";
 
 for (i = 0; str[i] != '\0'; i++)
 {
-while (str1[j] != '\0')
+for (j = 0; ltr[j] != '\0'; j++)
 {
-if (str[i] == str1[j])
-{
-str[i] = str2[j];
-}
-j++;
+if (ltr[j] == str[i])
+str[i] = ntr[j];
 }
 }
 return (str);

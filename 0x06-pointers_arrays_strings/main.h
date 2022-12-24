@@ -11,6 +11,8 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
+char *rot13(char *ch);
+void print_number(int);
 int _strncmp(char *s1, char *s2, int n);
 
 

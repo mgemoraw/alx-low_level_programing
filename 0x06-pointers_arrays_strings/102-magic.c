@@ -16,7 +16,7 @@ int *p;
 
 a[2] = 1024;
 p = &n;
-*(&n -3) = 98;
+*(&n - 3) = 98;
 /* ...so that this prints 98\n */
 printf("a[2] = %d\n", a[2]);
 return (0);

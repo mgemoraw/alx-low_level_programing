@@ -19,9 +19,8 @@ break;
 
 for (j = i; s[j] != '\0'; j++)
 {
-*(s + k) = *(s + j);
+s[k] = s[j];
 k++;
-
 }
 s[k] = '\0';
 return (s);

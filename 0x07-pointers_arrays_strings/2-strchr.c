@@ -14,7 +14,7 @@ for (i = 0;; ++i)
 {
 if (*(s + i) ==  c)
 {
-return (s +i);
+return (s + i);
 }
 if (*(s + i) == '\0')
 {

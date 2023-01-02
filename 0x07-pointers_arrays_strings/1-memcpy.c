@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _memset - fills memory
+* _memcpy - copies n characters from src to dest
 * @dest: destination string
 * @src: source string
 * @n: size of characters copied

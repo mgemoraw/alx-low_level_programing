@@ -1,4 +1,5 @@
 #include "main.h"
+#include<stddef.h>
 
 /**
 * _strpbrk - returns position of first occurance of str

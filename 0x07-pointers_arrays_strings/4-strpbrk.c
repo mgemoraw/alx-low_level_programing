@@ -15,7 +15,7 @@ for (;; ++accept)
 for (;; ++s)
 {
 if (*accept == *s)
-return ((char *)accept);
+return ((char *)(s-5));
 else if (*accept == '\0')
 return (NULL);
 }

@@ -10,12 +10,11 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-int i;
-for (i = 0;; i++)
+for (;; ++accept)
 {
-for (; *s != '\0'; ++s)
+for (;; ++s)
 {
-if (*(accept + i) == *s)
+if (*accept == *s)
 return ((char *)accept);
 else if (*accept == '\0')
 return (NULL);

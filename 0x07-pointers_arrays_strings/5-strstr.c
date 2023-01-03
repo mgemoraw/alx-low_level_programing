@@ -15,7 +15,7 @@ for (;; ++needle)
 for (;; ++haystack)
 {
 if (*needle == *haystack)
-return ((char *)needle);
+return ((char *)haystack);
 if (*needle == '\0')
 return (NULL);
 }

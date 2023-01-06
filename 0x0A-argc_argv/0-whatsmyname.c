@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
 * main - prints name of function
@@ -7,7 +8,7 @@
 * Return: returns always zero
 * Aughor: mgemoraw
 */
-int main(int argc, char *argv[])
+int _main(int argc, char *argv[])
 {
 	int i;
 	printf("%s\n", argv[0]);

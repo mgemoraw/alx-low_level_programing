@@ -8,9 +8,8 @@
 * Return: returns always zero
 * Aughor: mgemoraw
 */
-int _main(int argc, char *argv[])
+int main(int __attribte__((__unused___)) argc, char *argv[])
 {
-	int i;
 	printf("%s\n", argv[0]);
 	return (0);
 }

@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 gcc -c *.c
-ar crs liball.a *.o
+ar cr liball.a *.o
 ranlib liball.a

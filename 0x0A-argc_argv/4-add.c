@@ -17,7 +17,7 @@ for (i = 1; i < argc; i++)
 {
 if(atoi(argv[i]))
 {
-sum += atoi(argv[1]);
+sum += atoi(argv[i]);
 }
 else
 {

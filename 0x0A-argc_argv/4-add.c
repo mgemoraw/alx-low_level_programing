@@ -8,28 +8,25 @@
 * Return: returns 0
 * Author: mgemoraw
 */
-int rf(int x);
 
 int main(int argc, char *argv[])
 {
-int sum = 0;
+int i, sum = 0;
 
-if(atoi(argv[1]) && atoi(argv[2]))
+for (i = 1; i < argc; i++)
 {
-sum = atoi(argv[1]) + atoi(argv[2]);
-printf("%d\n", mul);
+if(atoi(argv[i]))
+{
+sum += atoi(argv[1]);
 }
 else
 {
 printf("Error\n");
-rf(sum);
+return (1);
 }
-(void)argc;
+}
+printf("%d\n", sum);
 return (0);
 }
 
-int rf(int x)
-{
-(void)x;
-return (1);
-}
+

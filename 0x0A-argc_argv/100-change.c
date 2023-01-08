@@ -20,6 +20,8 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
+else
+{
 while (cents > 0)
 {
 coins++;
@@ -46,7 +48,7 @@ continue;
 cents--;
 }
 printf("%d\n", coins);
-
+}
 return (0);
 
 }

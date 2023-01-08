@@ -12,6 +12,7 @@ int digit(char *s);
 
 /**
 * main - function prints number of args
+* digit - checks if number is digit
 * @argc: argument count
 * @argv: argument array
 * Return: returns 0

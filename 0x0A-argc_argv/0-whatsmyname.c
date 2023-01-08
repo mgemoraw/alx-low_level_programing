@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
 * main - prints name of function
@@ -9,7 +8,7 @@
 * Aughor: mgemoraw
 */
 
-int main(int __attribte__((__unused___)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
 	return (0);

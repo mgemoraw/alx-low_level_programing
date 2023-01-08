@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <string.h>
 
 /**
@@ -9,12 +8,13 @@
 * Return: returns 0
 * Author: mgemoraw
 */
-int cents(char *s)
+int cents(int arg)
 {
-    unsigned int cent atoi(s);
-    int cnum = 0;
-
-}
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 
 /**
 * main - function prints number of args

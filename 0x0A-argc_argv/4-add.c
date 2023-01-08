@@ -15,7 +15,7 @@ int i, sum = 0;
 
 for (i = 1; i < argc; i++)
 {
-if(atoi(argv[i]))
+if (atoi(argv[i]))
 {
 sum += atoi(argv[i]);
 }

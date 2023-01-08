@@ -12,12 +12,11 @@ int rf(int x);
 
 int main(int argc, char *argv[])
 {
-int mul = 1;
+int mul = 0;
 
-if(atoi(argv[1]) && atoi(argv[2]))
+if(argv[1] && argv[2])
 {
-mul *= atoi(argv[1]);
-mul *= atoi(argv[2]);
+mul = atoi(argv[1]) * atoi(argv[2]);
 printf("%d\n", mul);
 }
 else

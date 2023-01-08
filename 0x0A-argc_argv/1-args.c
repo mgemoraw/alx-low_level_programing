@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - function
@@ -8,9 +7,9 @@
  * Return: Returns always zero
  * Author: mgemoraw
  */
-int main(int __attribute__((__unused__)) argc, char* argv[])
+int main(int argc, char* argv[])
 {
-	printf("%d\n", argv[argc - 1]);
+	printf("%d\n", argv[argc]);
 	return (0);
 }
 

@@ -8,7 +8,6 @@
 * Return: returns 0
 * Author: mgemoraw
 */
-int rf(int x);
 
 int main(int argc, char *argv[])
 {
@@ -22,14 +21,8 @@ printf("%d\n", mul);
 else
 {
 printf("Error\n");
-rf(mul);
+return(1);
 }
 (void)argc;
 return (0);
-}
-
-int rf(int x)
-{
-(void)x;
-return (1);
 }

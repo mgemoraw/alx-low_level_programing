@@ -3,20 +3,6 @@
 #include <string.h>
 
 /**
-* cents - function prints number of args
-* @s: input character
-* Return: returns 0
-* Author: mgemoraw
-*/
-int cents(int arg)
-{
-	if (argc != 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
-
-/**
 * main - function prints number of args
 * @argc: argument count
 * @argv: argument array
@@ -26,11 +12,41 @@ int cents(int arg)
 
 int main(int argc, char *argv[])
 {
-    int i, count = 0;
-    char *s = argv[1];
-    if (atoi(argv[1]))
-    for(i = 0; *s != '\0'; i++)
-    {
+    int cents, coins = 0;
+    cents = atoi(argv[1]);
 
+    if (argc != 2)
+    {
+        printf("Error\n");
+        return (1);
     }
+    while (cents > 0)
+    {
+        coins++;
+        if((cents - 25) >= 0)
+        {
+            cents -= 25;
+            continue;
+        }
+        if((cents - 10) >= 0)
+        {
+            cents -= 10;
+            continue;
+        }
+        if((cents - 5) >= 0)
+        {
+            cents -= 5;
+            continue;
+        }
+        if((cents - 2) >= 0)
+        {
+            cents -= 2;
+            continue;
+        }
+        cents--;
+    }
+    printf("%d\n", coins);
+
+    return (0);
+    
 }

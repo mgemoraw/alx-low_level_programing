@@ -21,8 +21,8 @@ printf("%d\n", mul);
 else
 {
 printf("Error\n");
-return(1);
+return (1);
 }
-(void)argc;
+(void) argc;
 return (0);
 }

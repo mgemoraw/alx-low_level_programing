@@ -18,6 +18,21 @@ return (len);
 }
 
 /**
+* _stracpy - copies source to dest
+* @dest: destination string
+* @source: source string
+* Return: returns nothing
+*/
+void _stracpy(char *dest, char *source)
+{
+int j;
+for (j = 0; *(source + j) != '\0'; j++)
+{
+dest[j] = source[j];
+}
+return;
+}
+/**
 * str_concat - concatinates two strings
 * @s1: input character array
 * @s2: input character array
@@ -29,27 +44,38 @@ char *str_concat(char *s1, char *s2)
 char *str;
 int i, j, len;
 
-if (s1 == NULL && s2 != NULL)
-return (s2);
-else if (s1 != NULL && s2 == NULL)
-return (s1);
-else if (s1 == NULL && s2 == NULL)
+if (s1 == NULL && s2 == NULL)
 return (NULL);
+if (s1 == NULL && s2 != NULL)
+{
+len = _strlen(s2) + 1;
+str = (char *) malloc(len);
+_stracpy(str, s2);
+}
 
+if (s1 != NULL && s2 == NULL)
+{
+len = _strlen(s1) + 1;
+str = (char *) malloc(len);
+_stracpy(str, s1);
+}
+
+if (s1 != NULL && s2 != NULL)
+{
 len = _strlen(s1) + _strlen(s2) + 1;
-str = malloc(len);
+str = (char *) malloc(len);
 
-for (i = 0; i < _strlen(s1); i++)
+for (i = 0; s1[i] != '\0'; i++)
 {
 str[i] = s1[i];
 }
 
-for (j = 0; j < _strlen(s2); j++)
+for (j = 0; s2[j] != '\0'; j++)
 {
 str[i] = s2[j];
 i++;
 }
 str[i] = '\0';
-
+}
 return (str);
 }

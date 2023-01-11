@@ -10,7 +10,7 @@
 int _strlen(char *str)
 {
 int len = 0;
-while (*str != '\0')
+while (*(str + len) != '\0')
 {
 len++;
 }
@@ -32,11 +32,13 @@ return (NULL);
 
 len = _strlen(str) + 1;
 cpy = malloc(len);
+
 if (cpy == NULL)
 return (NULL);
+
 for (i = 0; i < len; i++)
 cpy[i] = str[i];
-cpy[len] = '\0';
+cpy[i] = '\0';
 
 return (cpy);
 }

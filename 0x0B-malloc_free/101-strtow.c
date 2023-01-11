@@ -43,5 +43,12 @@ return;
 */
 char **strtow(char *str)
 {
-
+    char **split;
+    int  i = 0, j = 0;
+    while (*(str + i) != '\0')
+        if (*str == ' ')
+            j++;
+        i++;
+    
+    *split = malloc(_strlen(str))
 }

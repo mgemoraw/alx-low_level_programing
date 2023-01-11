@@ -57,7 +57,7 @@ len += _strlen(av[i]);
 }
 str = malloc(sizeof(char) * len);
 
-for (i = 1; i < ac; i++)
+for (i = 0; i < ac; i++)
 {
 _stracpy(str, av[i]);
 _stracpy(str, ln);

@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
-* create_array: creates array
+* create_array- allocates memory and initializes with character c
 * @size: size of array
 * @c: input character
 * Return: returns pointer

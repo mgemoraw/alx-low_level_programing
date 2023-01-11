@@ -39,12 +39,12 @@ return (NULL);
 else
 {
 str = malloc(len);
-for (i = 0; i <= _strlen(s1); i++)
+for (i = 0; i < _strlen(s1); i++)
 {
 str[i] = s1[i];
 }
 
-for (j = 0; j <= _strlen(s2); j++)
+for (j = 0; j < _strlen(s2); j++)
 {
 str[i] = s2[j];
 i++;

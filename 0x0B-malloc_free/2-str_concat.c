@@ -45,7 +45,8 @@ char *str;
 int i, j, len;
 
 if (s1 == NULL && s2 == NULL)
-return (NULL);
+return ("");
+
 if (s1 == NULL && s2 != NULL)
 {
 len = _strlen(s2) + 1;

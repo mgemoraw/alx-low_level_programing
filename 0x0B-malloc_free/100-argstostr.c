@@ -45,6 +45,7 @@ return;
 char *argstostr(int ac, char **av)
 {
 char *str;
+char *ln = "\n";
 int i, len;
 
 if (ac == 0 || av == NULL)
@@ -59,6 +60,7 @@ str = malloc(sizeof(char) * len);
 for (i = 1; i < ac; i++)
 {
 _stracpy(str, av[i]);
+_stracpy(str, ln);
 }
 
 return (str);

@@ -27,7 +27,7 @@ return (len);
 char *str_concat(char *s1, char *s2)
 {
 char *str;
-unsigned int i, j, len;
+int i, j, len;
 len = _strlen(s1) + _strlen(s2) + 1;
 
 if (s1 == NULL && s2 != NULL)
@@ -38,12 +38,12 @@ else if (s1 == NULL && s2 == NULL)
 return (NULL);
 
 str = malloc(len);
-for (i = 0; i < _strlen(s1); i++)
+for (i = 0; i <= _strlen(s1); i++)
 {
 str[i] = s1[i];
 }
 
-for (j = 0; j < _strlen(s2); j++)
+for (j = 0; j <= _strlen(s2); j++)
 {
 str[i] = s2[j];
 i++;

@@ -36,6 +36,9 @@ return (NULL);
 if (s2 == NULL)
 return (s1);
 
+if(s1 == NULL)
+return (s2);
+
 str = malloc(len);
 for (i = 0; i <= _strlen(s1); i++)
 {

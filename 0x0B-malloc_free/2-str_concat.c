@@ -36,7 +36,8 @@ else if (s1 != NULL && s2 == NULL)
 return (s1);
 else if (s1 == NULL && s2 == NULL)
 return (NULL);
-
+else
+{
 str = malloc(len);
 for (i = 0; i <= _strlen(s1); i++)
 {
@@ -48,7 +49,7 @@ for (j = 0; j <= _strlen(s2); j++)
 str[i] = s2[j];
 i++;
 }
-str[len - 1] = '\0';
-
+str[i] = '\0';
+}
 return (str);
 }

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* create_array- allocates memory and initializes with character c
+* create_array - allocates memory and initializes with character c
 * @size: size of array
 * @c: input character
 * Return: returns pointer
@@ -15,7 +15,7 @@ unsigned int i;
 if (size == 0)
 return (NULL);
 
-array = malloc(sizeof(chr) * size);
+array = malloc(sizeof(char) * size);
 
 if (array == NULL)
 return (NULL);

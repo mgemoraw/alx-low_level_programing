@@ -1,16 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <unistd.h>
-
-/**
-* _putchar - puts the character string to i/o
-* @c: input character
-* Return: returns charactor to i/o
-*/
-int _putchar(char c)
-{
-return (write(1, &c, 1));
-}
 
 /**
 * _atexit - prints 98

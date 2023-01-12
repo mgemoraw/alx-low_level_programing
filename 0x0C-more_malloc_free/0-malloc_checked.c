@@ -26,13 +26,11 @@ void *malloc_checked(unsigned int b)
 {
 void *str;
 int value;
-
 str = malloc(b);
 value = atexit(_atexit);
 
-if (value != 0)
-{
+if (!str)
 exit(1);
-}
+
 return (str);
 }

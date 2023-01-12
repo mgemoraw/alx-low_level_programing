@@ -1,17 +1,18 @@
 #include "main.h"
 #include <stdlib.h>
-
+#include "../_string.h"
 /**
 * _atexit - prints 98
 * Return: returns nothing
 */
 void _atexit(void)
 {
-/*
+/**
 *_putchar('0' + 98 / 10);
 *_putchar('0' + 98 % 10);
 *_putchar('\n');
 */
+exit(98);
 return;
 }
 
@@ -29,9 +30,9 @@ str = malloc(b);
 
 value = atexit(_atexit);
 
-if (value != 0)
+if (!str)
 {
-exit(98);
+exit(1);
 }
 return (str);
 }

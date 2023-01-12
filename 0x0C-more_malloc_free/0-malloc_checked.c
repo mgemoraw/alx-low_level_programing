@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
-#include "../_string.h"
+
 /**
 * _atexit - prints 98
 * Return: returns nothing
 */
 void _atexit(void)
 {
-/**
+/*
 *_putchar('0' + 98 / 10);
 *_putchar('0' + 98 % 10);
 *_putchar('\n');

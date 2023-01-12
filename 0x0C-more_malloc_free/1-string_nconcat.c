@@ -55,5 +55,6 @@ for (j = 0; j < n; j++)
 {
 str[i + j] = s2[j];
 }
+str[i + j] = '\0';
 return (str);
 }

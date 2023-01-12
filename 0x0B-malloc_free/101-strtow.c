@@ -66,16 +66,12 @@ int  i = 0, j = 0, words, w = 0, l, sp, k;
 
 if (str == NULL || str[0] == '\0')
 return (NULL);
-
 words = _wordcount(str);
 if (words == 0)
 return (NULL);
-
 split = malloc(sizeof(char *) * (words + 1));
-
 if (split == NULL)
 return (NULL);
-
 while (*(str + w) != '\0')
 {
 l = 0;
@@ -101,10 +97,8 @@ for (k = 0; k < l; k++)
 {
 split[j][k] = str[w - l + k - 1];
 }
-/* printf("%s\n", split[j]); */
 j++;
 }
-
 }
 return (split);
 }

@@ -52,10 +52,10 @@ return (NULL);
 
 for (i = 0; i < ac; i++)
 {
-len += _strlen(av[i]);
+len += _strlen(av[i]) + 1;
 }
 
-str = malloc(sizeof(char) * len + 1);
+str = malloc(sizeof(char) * len);
 
 if (str == NULL)
 return (NULL);

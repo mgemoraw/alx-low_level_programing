@@ -18,37 +18,87 @@ return (len);
 }
 
 /**
-* _stracpy - concatenates two strings
-* @dest: destination string
-* @source: source string
-* Return: returns size of string
+* _wordcount - counts the number of words
+* @str: input string
+* Return: returns number of words in a string
 */
-void _stracpy(char *dest, char *source)
+int _wordcount(char *str)
 {
-int i, j;
+int i = 0, l, w = 0, words = 0, sp = 0;
 
-i = _strlen(dest);
-
-for (j = 0; *(source + j) != '\0'; j++)
+while (*(str + w) != '\0')
 {
-dest[i + j] = source[j];
+l = 0;
+
+for (i = w; *(str + i) != '\0'; i++)
+{
+
+if (*(str + i) == ' ' || *(str + i) == '\t')
+{
+sp++;
+w++;
+break;
 }
-return;
+else
+{
+l++;
+w++;
+continue;
+}
+}
+if (l > 0)
+words++;
+
+}
+
+return (words);
 }
 
 /**
-* argstostr - splits two strings
+* strtow - splits two strings
 * @str: input string
 * Return: arrays of splitted string
 */
 char **strtow(char *str)
 {
-    char **split;
-    int  i = 0, j = 0;
-    while (*(str + i) != '\0')
-        if (*str == ' ')
-            j++;
-        i++;
-    
-    *split = malloc(_strlen(str))
+char **split;
+int  i = 0, j = 0, words, w = 0, l, sp, k;
+
+if (str == NULL || str[0] == '\0')
+return (NULL);
+words = _wordcount(str);
+if (words == 0)
+return (NULL);
+split = malloc(sizeof(char *) * (words + 1));
+if (split == NULL)
+return (NULL);
+while (*(str + w) != '\0')
+{
+l = 0;
+for (i = w; *(str + i) != '\0'; i++)
+{
+if (*(str + i) == ' ' || *(str + i) == '\t')
+{
+sp++;
+w++;
+break;
+}
+else
+{
+l++;
+w++;
+continue;
+}
+}
+if (l > 0)
+{
+split[j] = malloc(sizeof(char) * (l + 1));
+for (k = 0; k < l; k++)
+{
+split[j][k] = str[w - l + k - 1];
+}
+j++;
+}
+}
+return (split);
 }

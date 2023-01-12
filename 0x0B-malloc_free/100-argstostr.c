@@ -54,7 +54,11 @@ for (i = 0; i < ac; i++)
 {
 len += _strlen(av[i]);
 }
-str = malloc(sizeof(char) * len);
+
+str = malloc(sizeof(char) * len + 1);
+
+if (str == NULL)
+return (NULL);
 
 for (i = 0; i < ac; i++)
 {

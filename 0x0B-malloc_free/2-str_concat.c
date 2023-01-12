@@ -25,10 +25,13 @@ return (len);
 */
 void _stracpy(char *dest, char *source)
 {
-int j;
+int i = 0, j;
+if (dest != NULL)
+i = _strlen(dest) - 1;
+
 for (j = 0; *(source + j) != '\0'; j++)
 {
-dest[j] = source[j];
+dest[i + j] = source[j];
 }
 return;
 }
@@ -44,27 +47,17 @@ char *str_concat(char *s1, char *s2)
 char *str;
 int i, j, len;
 
-if (s1 == NULL && s2 == NULL)
-return ("");
+if (s1 == NULL)
+s1 ="";
 
-if (s1 == NULL && s2 != NULL)
-{
-len = _strlen(s2) + 1;
-str = (char *) malloc(len);
-_stracpy(str, s2);
-}
+if (s2 == NULL)
+s2 = "";
 
-if (s1 != NULL && s2 == NULL)
-{
-len = _strlen(s1) + 1;
-str = (char *) malloc(len);
-_stracpy(str, s1);
-}
-
-if (s1 != NULL && s2 != NULL)
-{
 len = _strlen(s1) + _strlen(s2) + 1;
 str = (char *) malloc(len);
+
+if (str == NULL)
+return (NULL);
 
 for (i = 0; s1[i] != '\0'; i++)
 {
@@ -77,6 +70,6 @@ str[i] = s2[j];
 i++;
 }
 str[i] = '\0';
-}
+
 return (str);
 }

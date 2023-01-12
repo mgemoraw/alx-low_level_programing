@@ -26,7 +26,7 @@ return (len);
 void _stracpy(char *dest, char *source)
 {
 int i, j;
-i = _strlen(dest) - 1;
+i = _strlen(dest);
 
 for (j = 0; *(source + j) != '\0'; j++)
 {

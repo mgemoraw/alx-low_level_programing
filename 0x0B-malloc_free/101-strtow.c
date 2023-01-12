@@ -81,7 +81,7 @@ while (*(str + w) != '\0')
 l = 0;
 for (i = w; *(str + i) != '\0'; i++)
 {
-if (*(str + i) == ' ')
+if (*(str + i) == ' ' || *(str + i) == '\t')
 {
 sp++;
 w++;

@@ -30,7 +30,9 @@ str = malloc(b);
 value = atexit(_atexit);
 
 if (value != 0)
-exit(1);
+{
+    exit(1);
+}
 
 return (str);
 }

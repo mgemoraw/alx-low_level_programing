@@ -7,11 +7,6 @@
 */
 void _atexit(void)
 {
-/*
-*_putchar('0' + 98 / 10);
-*_putchar('0' + 98 % 10);
-*_putchar('\n');
-*/
 exit(98);
 return;
 }
@@ -25,13 +20,12 @@ return;
 void *malloc_checked(unsigned int b)
 {
 void *str;
-int value;
-str = malloc(b);
-value = atexit(_atexit);
 
-if (value != 0)
+str = malloc(b);
+
+if (str == NULL)
 {
-    exit(1);
+_atexit();
 }
 
 return (str);

@@ -17,6 +17,8 @@ for (;; ++accept)
 {
 if (*accept == *s)
 return (s);
+if (*accept == '\0')
+return (NULL);
 }
 }
 return '\0';

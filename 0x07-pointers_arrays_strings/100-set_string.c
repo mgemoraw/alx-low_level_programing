@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*set_string - sets string
+*set_string - sets string pointer to char 
 * @s: input stringa rray
 * @to: input string
 * Return: returns nothing

@@ -16,7 +16,7 @@ for (;; ++s)
 for (;; ++accept)
 {
 if (*accept == *s)
-return ((char *)(s));
+return (s);
 }
 }
 return '\0';

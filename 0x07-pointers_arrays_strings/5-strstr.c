@@ -20,7 +20,7 @@ j = 0;
 if (*(haystack + j) == *(needle + j))
 {
 do {
-if (*(needle + j) == '\0')
+if (*(needle + j + 1) == '\0')
 return (haystack);
 j++;
 } while (*(haystack + j) == *(needle + j));

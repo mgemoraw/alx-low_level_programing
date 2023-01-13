@@ -11,14 +11,13 @@
 char *_strpbrk(char *s, char *accept)
 {
 
+int i;
 for (;; ++s)
 {
-for (;; ++accept)
+for (i = 0; *(accept + i); i++)
 {
-if (*accept == *s)
-return (s);
-if (*accept == '\0')
-return (NULL);
+if (*(accept + i) == *s)
+return ((char *)s);
 }
 }
 return '\0';

@@ -20,5 +20,5 @@ if (*(accept + i) == *s)
 return ((char *)s);
 }
 }
-return '\0';
+return ('\0');
 }

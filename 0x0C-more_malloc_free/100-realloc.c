@@ -12,7 +12,7 @@
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 void *str;
-char *ptrcpy, *ss;
+char *ptrcpy, *s;
 unsigned int i;
 
 if (new_size == old_size)
@@ -44,7 +44,7 @@ ptrcpy = str;
 
 for (i = 0; i < old_size && i < new_size; i++)
 {
-ss[i] = *ptrcpy++;
+s[i] = *ptrcpy++;
 }
 free(ptr);
 return (str);

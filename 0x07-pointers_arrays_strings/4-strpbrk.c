@@ -10,14 +10,14 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-for (;; ++accept)
-{
+
 for (;; ++s)
 {
+for (;; ++accept)
+{
 if (*accept == *s)
-return ((char *)(s-5));
-else if (*accept == '\0')
-return (NULL);
+return ((char *)(s));
 }
 }
+return '\0';
 }

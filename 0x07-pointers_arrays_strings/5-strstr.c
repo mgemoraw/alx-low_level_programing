@@ -11,7 +11,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 int j;
-if (needle == NULL)
+if (*needle == 0)
 return (haystack);
 
 for (; *haystack; ++haystack)

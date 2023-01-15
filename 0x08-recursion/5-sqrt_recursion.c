@@ -7,9 +7,9 @@
 * Return: returns recursive number
 * Author: mgemoraw
 */
-int isqrt_k(unsigned int k, unsigned int n)
+int isqrt_k(int k, int n)
 {
-unsigned int new_k = (k + n/k) / 2;
+int new_k = (k + n/k) / 2;
 if ((k * k <= n) && (k + 1 ) * (k + 1) > n)
 {
 return k;

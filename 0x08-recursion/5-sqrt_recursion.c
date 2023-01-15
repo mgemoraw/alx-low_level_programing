@@ -1,6 +1,25 @@
 #include "main.h"
 
 /**
+*isqrt_k - computs sqrt
+* @k: input intiger
+* @n: input integer
+* Return: returns recursive number
+* Author: mgemoraw
+*/
+int isqrt_k(unsigned int k, unsigned int n)
+{
+unsigned int new_k = (k + n/k) / 2;
+if ((k * k <= n) && (k + 1 ) * (k + 1) > n)
+{
+return k;
+}
+else
+{
+return isqrt_k(new_k, n);
+}
+}
+/**
 * _sqrt_recursion - finds natural square root of a number
 * @n: input square number
 * Return: returns square root of a number
@@ -8,20 +27,6 @@
 */
 int _sqrt_recursion(int n)
 {
-    static int guess = 1;
-    if (guess < n)
-    {
-        if (n < 0)
-            return (-1);
-        if (n == 0)
-            return (0);
-        if (n == 1)
-            return (n);
-        else
-        {    
-            guess ++;
-            return (n / _sqrt_recursion(n)); 
-        }
-    }
-
+return isqrt_k(1, n);
 }
+

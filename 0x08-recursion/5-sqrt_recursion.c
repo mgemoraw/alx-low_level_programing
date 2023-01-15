@@ -9,14 +9,14 @@
 */
 int isqrt_k(int k, int n)
 {
-int new_k = (k + n/k) / 2;
-if ((k * k <= n) && (k + 1 ) * (k + 1) > n)
+int new_k = (k + n / k) / 2;
+if ((k * k <= n) && (k + 1) * (k + 1) > n)
 {
-return k;
+return (k);
 }
 else
 {
-return isqrt_k(new_k, n);
+return (isqrt_k(new_k, n));
 }
 }
 /**
@@ -27,6 +27,5 @@ return isqrt_k(new_k, n);
 */
 int _sqrt_recursion(int n)
 {
-return isqrt_k(1, n);
+return (isqrt_k(1, n));
 }
-

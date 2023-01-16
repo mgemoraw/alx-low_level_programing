@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* free_dog - frees dog 
+* free_dog - frees dogs
 * @d: structure variable
 * Return: returns nothing
 */

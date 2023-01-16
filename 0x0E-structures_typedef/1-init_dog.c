@@ -9,11 +9,10 @@
 * @owner: owner of dog
 */
 
-void init_dog(struct dog *d, char *name, flaot age, char *owner)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-struct dog d;
-name = d.name;
-age = d.age;
-owner = d.owner;
+d->name = name;
+d->age = age;
+d->owner = owner;
 return;
 }

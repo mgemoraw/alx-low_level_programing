@@ -61,7 +61,7 @@ free(d->name);
 return (NULL);
 }
 d->owner = malloc(sizeof(char) * _strlen(owner));
-if (d->owner = NULL)
+if (d->owner == NULL)
 {
 free(d->owner);
 return (NULL);

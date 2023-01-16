@@ -6,7 +6,8 @@
 * @x: input integer number
 * Description: macro  returns the absolute value of number x
 * Author: mgemoraw
+*
+* #define ABS(x) ((x) < 0 ? (-1 * x) : (x))
 */
-#define ABS(x) ((x) < 0 ? (-x) : (x))
-
+#define ABS(x) (x >= 0 ? x : -x)
 #endif

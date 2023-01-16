@@ -7,7 +7,7 @@
 */
 int isPrime(int n, int i)
 {
-    // Base cases
+
     if (n <= 2)
         return (n == 2) ? 1 : 0;
     if (n % i == 0)
@@ -15,7 +15,7 @@ int isPrime(int n, int i)
     if (i * i > n)
         return 1;
  
-    // Check for next divisor
+    /*Check for next divisor*/
     return isPrime(n, i + 1);
 }
 /**

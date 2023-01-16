@@ -8,8 +8,11 @@
 */
 void print_dog(struct dog *d)
 {
+
 if (d == NULL)
-printf("nothing");
+{
+
+}
 
 if (d->name == NULL)
 d->name = "(nil)";

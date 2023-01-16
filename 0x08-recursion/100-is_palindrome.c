@@ -24,8 +24,13 @@ return (len);
 */
 int is_palindrome(char *s)
 {
-int x = _strlen(s);
-if (x == 0 || x == NULL)
+int x;
+if (s == NULL)
+return (1);
+
+x = _strlen(s);
+
+if (x == 0)
 return (1);
 else
 return (0);

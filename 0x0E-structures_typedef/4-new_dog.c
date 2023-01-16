@@ -18,7 +18,7 @@ len++;
 return (len);
 }
 /**
- * _strcopy - Copies a string from source to dest
+ * _strcpy - Copies a string from source to dest
  * @dest: The buffer storing the string copy.
  * @source: The source string.
  *
@@ -50,7 +50,7 @@ dog_t *d;
 if (name == NULL || age < 0 || owner == NULL)
 return (NULL);
 
-d = malloc(sizeof(struct dog));
+d = malloc(sizeof(dog_t));
 if (d == NULL)
 return (NULL);
 

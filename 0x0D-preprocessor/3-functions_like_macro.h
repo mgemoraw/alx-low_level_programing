@@ -5,7 +5,7 @@
 * File: 3-function_like_macro.h
 * Description: macro for Absolute value of a number
 * Author: mgemoraw
-
-#define ABS(x) (x < 0 ? -x: x)
+*/
+#define ABS(int x) ((x < 0) ? (-1 * x) : x)
 
 #endif

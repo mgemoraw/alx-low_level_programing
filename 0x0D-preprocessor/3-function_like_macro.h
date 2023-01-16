@@ -3,7 +3,8 @@
 
 /**
 * File: 3-function_like_macro.h
-* Description: macro for Absolute value of a number
+* @x: input integer number
+* Description: macro  returns the absolute value of number x
 * Author: mgemoraw
 */
 #define ABS(x) ((x) < 0 ? (-x) : (x))

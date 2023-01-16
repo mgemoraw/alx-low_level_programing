@@ -27,10 +27,6 @@ int isPrime(int n, int i)
 int is_prime_number(int n)
 {
 int p = 2;
-if (isPrime(n, p) == 0)
-return (0);
-
-if (isPrime(n, p) == 1)
-return (1);
+return (isPrime(n, p));
 
 }

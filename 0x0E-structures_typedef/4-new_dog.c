@@ -54,15 +54,16 @@ d = malloc(sizeof(struct dog));
 if (d == NULL)
 return (NULL);
 
-d->name = malloc(sizeof(char) * _strlen(name));
+d->name = malloc(sizeof(char) * _strlen(name) + 1);
 if (d->name == NULL)
 {
 free(d->name);
 return (NULL);
 }
-d->owner = malloc(sizeof(char) * _strlen(owner));
+d->owner = malloc(sizeof(char) * _strlen(owner) + 1);
 if (d->owner == NULL)
 {
+free(d->name);
 free(d->owner);
 return (NULL);
 }

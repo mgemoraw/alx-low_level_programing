@@ -15,18 +15,16 @@ return;
 }
 
 if (d->name == NULL)
-printf("(nil)\n");
-else
+d->name = "(nil)";
 printf("Name: %s\n", d->name);
 
-if (!(d->age))
+if ((d->age < 0))
 printf("(nil)\n");
 else
 printf("Age: %f\n", d->age);
 
 if (d->owner == NULL)
-printf("(nil)\n");
-else
+d->name = "(nil)";
 printf("Owner: %s\n", d->owner);
 
 return;

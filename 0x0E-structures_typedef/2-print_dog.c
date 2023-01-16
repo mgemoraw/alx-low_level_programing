@@ -15,17 +15,17 @@ return;
 }
 
 if (d->name == NULL)
-d->name = "(nil)";
+d->name = "nil";
 else
 printf("Name: %s\n", d->name);
 
 if (!(d->age))
-printf("(nil)");
+printf("nil");
 else
 printf("Age: %f\n", d->age);
 
 if (d->owner == NULL)
-d->owner = "(nil)";
+d->owner = "nil";
 else
 printf("Owner: %s\n", d->owner);
 

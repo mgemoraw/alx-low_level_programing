@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdio.>
+#include <stdio.h>
 
 /**
 * print_dog - function prints dog
@@ -14,10 +14,10 @@ printf("");
 if (d->name == NULL)
 d->name = "nil";
 
-if (d->age == NULL)
+if (d->age == 0)
 d->age = 0.0;
 
-if (d->onwer == NULL)
+if (d->owner == NULL)
 d->owner = "nil";
 
 printf("Name: %s\n", d->name);

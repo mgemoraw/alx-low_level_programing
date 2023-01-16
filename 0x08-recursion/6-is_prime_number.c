@@ -5,16 +5,18 @@
 * @i: divider
 * Return: returns 1 if prime else 0
 */
-int isPrime(int n, int i = 2)
+int isPrime(int n, int i)
 {
+    // Base cases
     if (n <= 2)
-    return ((n == 2) ? 1 : 0);
-
+        return (n == 2) ? 1 : 0;
     if (n % i == 0)
-    return (0);
-
+        return 0;
     if (i * i > n)
-    return (isPrime(n, i + 1));
+        return 1;
+ 
+    // Check for next divisor
+    return isPrime(n, i + 1);
 }
 /**
 * is_prime_number  - checks for prime number
@@ -24,11 +26,11 @@ int isPrime(int n, int i = 2)
 */
 int is_prime_number(int n)
 {
-
-if (isPrime(n) == 0)
+int p = 2;
+if (isPrime(n, p) == 0)
 return (0);
 
-if (isPrime(n) == 1)
+if (isPrime(n, p) == 1)
 return (1);
 
 }

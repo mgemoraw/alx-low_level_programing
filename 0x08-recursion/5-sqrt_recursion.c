@@ -9,6 +9,9 @@
 */
 int isqrt_k(int k, int n)
 {
+if (n < 0)
+return (-1);
+
 int new_k = (k + n / k) / 2;
 if ((k * k <= n) && (k + 1) * (k + 1) > n)
 {

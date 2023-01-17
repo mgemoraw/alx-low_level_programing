@@ -1,19 +1,17 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 * _strlen - returns length of string
 * @str: input character array
 * Return: returns size of string
 * Author: mgemoraw
 */
-int _strlen(char *str)
+int _strrlen(char *str)
 {
-int len = 0;
-while (*(str + len) != '\0')
-{
-len++;
-}
-return (len);
+if (str == NULL)
+return (0);
+else
+return (1 + _strrlen((char *)str++));
 }
 /**
 * wildcmp - compares two strngs
@@ -25,17 +23,18 @@ return (len);
 
 int wildcmp(char *s1, char *s2)
 {
-int i = 0, j = 0;
-j = _strlen(s2);
+if (s1 == NULL && s2 == NULL)
+return (0);
 
-while (*(s1 + i) == *(s2 + i) && *(s1 + i) != '\0')
+if (s1 == NULL || s2 == NULL)
+return (0);
+
+if (_strrlen(s2) == _strrlen(s1))
 {
-i++;
+    if (*s1++ == *s2++)
+    return (wildcmp((char *)s1++, (char *)s2++));
 }
 
-if (i == j)
-return (1);
-else
 return (0);
 
 }

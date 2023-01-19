@@ -8,9 +8,10 @@
 */
 int main(int argc, char *argv[])
 {
-(void);
 int n, m;
 char *op;
+
+(void)argc;
 
 if (argc != 4)
 {

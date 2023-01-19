@@ -1,6 +1,10 @@
 #include "3-calc.h"
 
-
+/**
+* get_op_func - get operator function
+* @s: input array of args
+* Return: returns pointer
+*/
 int (*get_op_func(char *s))(int, int)
 {
 op_t ops[] = {

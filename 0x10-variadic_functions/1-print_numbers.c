@@ -11,9 +11,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 va_list list;
 unsigned int i;
 
-if (separator == NULL)
-return;
-
 if(n == 0)
 return;
 

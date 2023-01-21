@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
     if (format == NULL)
     return;
 */
-    while (*(format + len)!= '\0')
+    while (format != NULL && *(format + len)!= '\0')
     len++;
 
 

@@ -1,31 +1,4 @@
 #include "variadic_functions.h"
-#include "../_string.h"
-#include <unistd.h>
-
-/**
-* _strlen - returns length of string
-* @str: input character array
-* Return: returns size of string
-* Author: mgemoraw
-*/
-int _strlen(char *str)
-{
-int len = 0;
-while (*(str + len) != '\0')
-{
-len++;
-}
-return (len);
-}
-/**
-* _putchar - puts the character string to i/o
-* @c: input character
-* Return: returns charactor to i/o
-*/
-int _putchar(char c)
-{
-return (write(1, &c, 1));
-}
 
 /**
 * print_all - function prints all formats
@@ -34,26 +7,54 @@ return (write(1, &c, 1));
 */
 void print_all(const char * const format, ...)
 {
-    char *flags;
-    unsigned int i, len = 0;
-
-    while(*(format + len) != '\0')
-    {
-    len++;
-    }
-
-    printf("%u", len);
+    char flag;
+    char *fmt;
+    char *str;
+    unsigned int i = 0, len = 0;
     va_list list;
 
+    if (format == NULL)
+    return;
+
+    while (*(format + len)!= '\0')
+    len++;
+
+
     va_start(list, format);
-    // printf("%s", va_arg(list, char*));
 
+    while (i < len )
+    {
+        flag = format[i];
+    
+        switch(flag)
+        {
+        case 'c':
+            fmt = "%c";
+            printf(fmt, va_arg(list, int));
+            break;
+        case 'i':
+            fmt = "%i";
+            printf(fmt, va_arg(list, int));
+            break;
+        case 's':
+            str = va_arg(list, char*);
+            fmt = "%s";
+            printf("%s", str);
+            break;
+        case 'f':
+            fmt = "%f";
+            printf(fmt, va_arg(list, double));
+            break;
+        default: 
+            i++;
+            continue;
+        }
+        if (i < len-1)
+        printf(", ");
+        i++;
+    }
+    va_end(list);
 
-
+    printf("\n");
 }
 
-int main(int argc, char *argv[])
-{
-    print_all("ceis", "B liu", "a", "what is app");
-    return (0);
-}

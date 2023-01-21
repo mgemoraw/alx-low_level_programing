@@ -12,10 +12,10 @@ void print_all(const char * const format, ...)
     char *str;
     unsigned int i = 0, len = 0;
     va_list list;
-
+/*
     if (format == NULL)
     return;
-
+*/
     while (*(format + len)!= '\0')
     len++;
 
@@ -25,7 +25,7 @@ void print_all(const char * const format, ...)
     while (i < len )
     {
         flag = format[i];
-    
+       
         switch(flag)
         {
         case 'c':
@@ -37,7 +37,7 @@ void print_all(const char * const format, ...)
         case 's':
             str = va_arg(list, char*);
             if (str == NULL)
-            str = "(nil)";
+                str = "(nil)";
             printf("%s", str);
             break;
         case 'f':
@@ -47,9 +47,10 @@ void print_all(const char * const format, ...)
             i++;
             continue;
         }
-        if (i < len-1)
+        if (i < len-1) 
         printf(", ");
         i++;
+        
     }
     va_end(list);
 

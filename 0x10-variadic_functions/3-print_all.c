@@ -8,7 +8,7 @@
 void print_all(const char * const format, ...)
 {
     char flag;
-    char *fmt;
+    /*char *fmt;*/
     char *str;
     unsigned int i = 0, len = 0;
     va_list list;
@@ -29,12 +29,10 @@ void print_all(const char * const format, ...)
         switch(flag)
         {
         case 'c':
-            fmt = "%c";
-            printf(fmt, va_arg(list, int));
+            printf("%c", va_arg(list, int));
             break;
         case 'i':
-            fmt = "%i";
-            printf(fmt, va_arg(list, int));
+            printf("%i", va_arg(list, int));
             break;
         case 's':
             str = va_arg(list, char*);
@@ -43,8 +41,7 @@ void print_all(const char * const format, ...)
             printf("%s", str);
             break;
         case 'f':
-            fmt = "%f";
-            printf(fmt, va_arg(list, double));
+            printf("%f", va_arg(list, double));
             break;
         default: 
             i++;

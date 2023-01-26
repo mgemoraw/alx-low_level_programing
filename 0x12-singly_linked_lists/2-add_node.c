@@ -5,10 +5,10 @@
 * @str: input string
 * Return: returns length of string
 */
-size_t _strlen(char *str)
+int _strlen(const char *str)
 {
-size_t len = 0;
-while (*str != '\0')
+unsigned int len = 0;
+while (*str++ != '\0')
 {
 len++;
 }
@@ -23,7 +23,8 @@ return (len);
 */
 list_t *add_node(list_t **head, const char *str)
 {
-struct list_t *newNode = malloc(sizeof(struct list_t));
+
+list_t *newNode = malloc(sizeof(list_t));
 
 if (newNode == NULL)
 return (NULL);

@@ -16,7 +16,7 @@ while (h != NULL)
 if (h->str == NULL)
 {
 printf("[%d] %s\n", 0, "(nil)");
-temp = h->next;
+h = h->next;
 i++;
 }
 else

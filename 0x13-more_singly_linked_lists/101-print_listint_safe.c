@@ -7,22 +7,22 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t len = 0;
-	long int d;
+	size_t nodes = 0;
+	long int dnum;
 
 	while (head != NULL)
 	{
-		d = head - head->next;
-		len++;
+		dnum = head - head->next;
+		nodes++;
 		printf("[%p] %d\n", (void *)head, head->n);
-		if (d > 0)
+		if (dnum > 0)
 			head = head->next;
 		else
 		{
 			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
-			return (98);
+			break;
 		}
 	}
 
-	return (len);
+	return (nodes);
 }

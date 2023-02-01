@@ -8,18 +8,18 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t len = 0;
-	long int ex;
+	long int d;
 
-	while (head)
+	while (head != NULL)
 	{
-		ex = head - head->next;
+		d = head - head->next;
 		len++;
 		printf("[%p] %d\n", (void *)head, head->n);
-		if (ex > 0)
+		if (d > 0)
 			head = head->next;
 		else
 		{
-			printf("-> [%p] %d\n", (void *)head->next, head->next);
+			printf("-> [%p] %d\n", (void *)head->next, head->n);
 			break;
 		}
 	}

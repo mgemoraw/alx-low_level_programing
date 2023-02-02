@@ -7,5 +7,16 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
+	listint_t *currentNode;
+	size_t size = 0;
 
+	while (*head != NULL)
+	{
+		currentNode = (*head)->next;
+		free(*head);
+		size++;
+		*head = currentNode;
+	}
+	*head = NULL;
+	return (sizeof(listint_t) * size);
 }

@@ -2,7 +2,7 @@
 /**
 * flip_bits - flips bits
 * @n: input integer number
-* @m: input integer number 
+* @m: input integer number
 * Return: returns something
 */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
@@ -13,6 +13,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		if ((n & 1) != (m & 1))
 			my_bits++;
-    }
+	}
 	return (my_bits);
 }

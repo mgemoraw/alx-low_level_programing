@@ -3,7 +3,7 @@
 /**
  * free_listint_safe - frees memory of a linked list
  * @h: linked head pointer
- * Return: node
+ * Return: size freed
  */
 size_t free_listint_safe(listint_t **h)
 {
@@ -18,5 +18,5 @@ size_t free_listint_safe(listint_t **h)
 		*h = currentNode;
 	}
 	*h = NULL;
-	return (sizeof(listint_t) * size);
+	return (size);
 }

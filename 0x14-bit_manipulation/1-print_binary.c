@@ -5,11 +5,11 @@
 * @n: integer number
 * Return: returns string of binary form
 */
-char bin(int n)
+char bin(unsigned long int n)
 {
 	if (n > 2)
-		bin(n / 2);
-	return (_putchar(n % 2 + '0'));
+		bin(n >> 1);
+	return (_putchar((n & 1) + '0'));
 }
 /**
 * print_binary - prints binary form of a number

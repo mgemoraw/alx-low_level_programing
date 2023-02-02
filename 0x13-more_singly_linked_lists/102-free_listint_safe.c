@@ -10,13 +10,13 @@ size_t free_listint_safe(listint_t **h)
 	listint_t *currentNode;
 	size_t size = 0;
 
-	while (*head != NULL)
+	while (*h != NULL)
 	{
-		currentNode = (*head)->next;
-		free(*head);
+		currentNode = (*h)->next;
+		free(*h);
 		size++;
-		*head = currentNode;
+		*h = currentNode;
 	}
-	*head = NULL;
+	*h = NULL;
 	return (sizeof(listint_t) * size);
 }

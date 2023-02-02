@@ -7,9 +7,16 @@
 */
 char bin(unsigned long int n)
 {
-	if (n > 2)
-		bin(n >> 1);
-	return (_putchar((n & 1) + '0'));
+	if (n >> 0)
+	{
+		if (n >> 1)
+			bin(n >> 1);
+		return (_putchar((n & 1) + '0'));
+	}
+	else
+	{
+		return (_putchar('0'));
+	}
 }
 /**
 * print_binary - prints binary form of a number

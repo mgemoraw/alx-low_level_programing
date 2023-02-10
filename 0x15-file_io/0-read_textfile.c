@@ -8,5 +8,15 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+    FILE *f_out;
+    char *str;
+
+    fout = fopen(filename, "r");
+
+    if (f_out == NULL || filename == NULL)
+        return (0);
+
+    
+
 
 }

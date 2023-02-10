@@ -17,30 +17,30 @@ int _putchar(char c)
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    ssize_t f_out, chars, buffer;
-    char *str;
+    ssize_t file, chars_in, chars_out;
+    char *buffer;
 
-    str = malloc(sizeof(char) * letters);
+    buffer = malloc(sizeof(char) * letters);
 
-    if (str == NULL || filename == NULL)
+    if (buffer == NULL || filename == NULL)
         return (0);
 
-    f_out = open(filename, O_RDONLY);
+    file = open(filename, O_RDONLY);
 
-    if (f_out == -1)
+    if (file == -1)
         return (0);
 
-    chars = read(f_out, str, letters);
-    if (chars == -1)
+    chars_in = read(file, buffer, letters);
+    if (chars_in == -1)
         return (0);
 
-    buffer = write(STDOUT_FILENO, str, chars);
+    chars_out = write(STDOUT_FILENO, buffer, chars_in);
 
-    if (buffer == -1)
+    if (chars_out == -1)
         return (0);
     
-    close(f_out);
-    free(str);
-    return (buffer);
+    close(file);
+    free(buffer);
+    return (chars_out);
     
 }

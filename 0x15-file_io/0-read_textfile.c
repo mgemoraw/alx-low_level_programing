@@ -17,17 +17,22 @@ int _putchar(char c)
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    FILE *f_out;
+    int f_out;
     char ch;
     size_t chars = 0;
+    int bytes = 0;
+    f_out = open(filename, O_RDONLY);
 
-    f_out = fopen(filename, "r");
+    (void)letters;
 
-    if (f_out == NULL || filename == NULL)
+    if (f_out == 0 || filename == NULL)
         return (0);
-
-    while(chars <= letters)
+    
+    while((bytes = read(f_out, &ch, sizeof(ch))) > 0)
     {
+        if (ch == EOF || chars == letters)
+            return (chars);
+    
         if (ch =='\n')
         {
             _putchar('\n');
@@ -36,11 +41,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
         {
             _putchar(ch);
         }
+        
         chars++; 
-        if ((ch = fgetc(f_out)) == EOF)
-            return (chars);
+        
 
     }
+    close(f_out);
 
     return (chars + 1);
 }

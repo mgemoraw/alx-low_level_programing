@@ -19,14 +19,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
     FILE *f_out;
     char ch;
-    ssize_t chars = 0;
+    size_t chars = 0;
 
     f_out = fopen(filename, "r");
 
     if (f_out == NULL || filename == NULL)
         return (0);
 
-    while((ch = fgetc(f_out)) != EOF)
+    while(chars <= letters)
     {
         if (ch =='\n')
         {
@@ -37,6 +37,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
             _putchar(ch);
         }
         chars++; 
+        if ((ch = fgetc(f_out)) == EOF)
+            return (chars);
+
     }
 
     return (chars + 1);

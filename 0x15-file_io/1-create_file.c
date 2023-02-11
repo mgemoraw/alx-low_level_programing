@@ -16,7 +16,7 @@ return (0);
 
 if (text_content != NULL)
 {
-for(len = 0; text_content[len]; len++)
+for (len = 0; text_content[len]; len++)
 len++;
 }
 file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);

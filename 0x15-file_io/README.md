@@ -1,1 +1,2 @@
-C file Input output project 
+File input output for POSIX system
+using C

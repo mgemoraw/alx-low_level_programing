@@ -19,7 +19,7 @@ if (text_content != NULL)
 for(len = 0; text_content[len]; len++)
 len++;
 }
-file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600)
+file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 out = write(file, text_content, len);
 
 if (file == -1 || out == -1)

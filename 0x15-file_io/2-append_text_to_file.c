@@ -11,7 +11,7 @@ int file, fout, i;
 
 if (filename == NULL)
     return(-1);
-file = open(filename, O_APPEND | O_RDONLY, 0664)
+file = open(filename, O_APPEND | O_RDONLY, 0664);
 
 if (file == -1)
 return (-1);

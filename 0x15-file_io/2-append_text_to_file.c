@@ -23,7 +23,7 @@ for (i = 0; text_content[i]; i++)
 fout = write(file, text_content, i);
 
 if (fout == -1)
-return (-1);
+return (1);
 }
 close(file);
 return (1);

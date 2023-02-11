@@ -1,15 +1,6 @@
 #include "main.h"
 
 /**
-* _putchar - puts character to the screen
-* @c: input character
-* Return: returns chacter
-*/
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-/**
 *read_textfile - read text files
 *@filename: file name to be read
 *@letters: size of chars in filename

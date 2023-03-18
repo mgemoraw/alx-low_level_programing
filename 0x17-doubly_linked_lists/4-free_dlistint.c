@@ -17,6 +17,7 @@ void free_dlistint(dlistint_t *head)
 		{
 			temp = head;
 			head = head->next;
+			head->prev = NULL;
 			free(temp);
 		}
 	}

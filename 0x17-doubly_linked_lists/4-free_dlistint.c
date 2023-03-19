@@ -8,8 +8,7 @@ void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *temp = malloc(sizeof(dlistint_t));
 
-	
-	while(head != NULL)
+	while (head != NULL)
 	{
 		temp = head->next;
 		free(head);

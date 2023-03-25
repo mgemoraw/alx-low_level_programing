@@ -23,7 +23,7 @@ void free_dlistint(dlistint_t *head)
 		head->prev = NULL;
 
 		free(temp); /* free current head */
-	}	
+	}
 	}
 
 }

@@ -1,9 +1,9 @@
-SC := gcc
+CC := gcc
 SRC := main.c school.c
 
 
 all: $(SRC)
-	$(SC) $(SRC) -o school
+	$(CC) $(SRC) -o school
 
 
 clean:

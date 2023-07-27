@@ -1,4 +1,0 @@
-school : main.o
-
-main.o: main.c m.h school.c
-	cc -c main.c

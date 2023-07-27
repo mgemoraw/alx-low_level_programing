@@ -4,9 +4,12 @@ OBJ := main.o school.o
 NAME:= school
 
 all: $(OBJ)
-	$(SC) -c main.c
-	$(SC) -c school.c
 	$(SC) $(OBJ) -o $(NAME)
+main.o: main.c m.h
+	$(SC) -c main.c
+school.o: school.c m.h
+	$(SC) -c school.c
+
 
 clean:
 	rm *.o $(NAME)

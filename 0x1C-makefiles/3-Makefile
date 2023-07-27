@@ -1,8 +1,8 @@
-SRC := main.c school.c
-CC := gcc
-RM := rm -f
-OBJ := main.o school.o
-NAME := school
+SRC = main.c school.c
+CC = gcc
+RM = rm -f
+OBJ = main.o school.o
+NAME = school
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
@@ -18,7 +18,6 @@ clean:
 	$(RM) *~ *.gch
 oclean:
 	$(RM) main.o school.o
-
 
 fclean:
 	$(RM) *~ *.gch $(NAME)

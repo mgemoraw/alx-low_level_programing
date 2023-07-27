@@ -1,7 +1,7 @@
 SRC = main.c school.c
 CC = gcc
 RM = rm -f
-OBJ = $(SCR:.c=.o)
+OBJ = $(SRC:.c=.o)
 NAME = school
 
 all: $(OBJ)

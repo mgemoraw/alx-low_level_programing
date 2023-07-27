@@ -22,4 +22,5 @@ oclean:
 
 fclean:
 	$(RM) *~ *.gch $(NAME)
+	$(RM) main.o school.o
 

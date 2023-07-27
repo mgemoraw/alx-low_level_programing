@@ -2,14 +2,9 @@ SC := gcc
 SRC := main.c school.c
 OBJ := main.o school.o
 
-all: $(OBJ)
-	$(SC) -o school $(SRC)
+all: $(SRC)
+	$(SC) $(SRC) -o school
 
-
-main.o: main.c m.h
-	$(CC) -c main.c
-school.o: school.c m.h
-	$(CC) -o school.c
 
 clean:
 	rm *.o school

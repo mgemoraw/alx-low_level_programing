@@ -8,6 +8,7 @@
  * @size: size of array
  * @value: target value of the array
  * Return: int
+ * Description: linear search implementation in c
  */
 int linear_search(int *array, size_t size, int value)
 {
